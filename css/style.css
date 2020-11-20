@@ -76,11 +76,24 @@ img {
 
 
 @media screen and (max-width: 768px){
-  #lezioni .container>.left,
-  #lezioni .container>.right {
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+*{
+  overflow:hidden;
+}
+
+  #lezioni .left,
+  #lezioni .right {
     width: 50%;
+    height: 300px;
     float: left;
+    font-size: 12px;
   }
+
 
   #steps .container>.left,
   #steps .container>.central,
@@ -123,10 +136,6 @@ img {
     box-sizing: border-box;
   }
 
-  .container{
-    margin-top: 0;
-  }
-
   #lezioni .container>.left,
   #lezioni .container>.right,
   #steps .container>.left,
@@ -134,8 +143,9 @@ img {
   #steps .container>.right {
     width: 100%;
     padding: 50px;
-    font-size: 18px;
   }
+
+
 
   #why .container>.first,
   #why .container>.second,
@@ -145,7 +155,7 @@ img {
   }
 
   img {
-    width: 200px;
+    width: 150px;
     height: auto;
   }
 
