@@ -1,0 +1,156 @@
+
+
+/* BLOCCO LEZIONI */
+#lezioni .left,
+#lezioni .right {
+  width: 50%;
+  float: left;
+  border: 1px solid black;
+  font-size: 14px;
+  padding: 20px 10px;
+}
+
+.show-mobile{
+  display: none;
+}
+
+#lezioni .container img {
+  /* per centrare orizzontalmente */
+  display:inline-block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#lezioni {
+  text-align: center;
+}
+
+/* BLOCCO STEPS */
+#steps .container>.left,
+#steps .container>.central,
+#steps .container>.right {
+  float: left;
+  width: 33%;
+}
+
+#steps {
+  text-align: center;
+}
+
+/* BLOCCO PERCHE */
+#why {
+  text-align: center;
+}
+
+#why .container>.first,
+#why .container>.second,
+#why .container>.third {
+  width: 100%;
+  margin-top: 80px;
+}
+
+#why .container img {
+  background-color: #428bca;
+  border-radius: 50%;
+  padding: 30px
+}
+
+/* COMMON */
+.container::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.container.grey {
+  background-color: #f9f9f9;
+}
+
+img {
+  height: 200px;
+}
+
+.clear {
+  clear: both;
+}
+
+
+@media screen and (max-width: 768px){
+  #lezioni .container>.left,
+  #lezioni .container>.right {
+    width: 50%;
+    float: left;
+  }
+
+  #steps .container>.left,
+  #steps .container>.central,
+  #steps .container>.right {
+    float: none;
+    width: 50%;
+  }
+
+  #steps .container>.left,
+  #steps .container>.central{
+    float:left;
+    margin-bottom: 40px;
+  }
+
+  #steps .container>.right{
+    margin: 0px auto;
+  }
+
+  .container h1{
+    margin-bottom: 40px
+  }
+
+  #why .container>.first,
+  #why .container>.second,
+  #why .container>.third {
+    width: 33%;
+    float: left;
+    margin-top: 80px;
+  }
+
+  .show-desktop{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 420px){
+  *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+  }
+
+  .container{
+    margin-top: 0;
+  }
+
+  #lezioni .container>.left,
+  #lezioni .container>.right,
+  #steps .container>.left,
+  #steps .container>.central,
+  #steps .container>.right {
+    width: 100%;
+    padding: 50px;
+    font-size: 18px;
+  }
+
+  #why .container>.first,
+  #why .container>.second,
+  #why .container>.third {
+    width:100%;
+    padding: 60px;
+  }
+
+  img {
+    width: 200px;
+    height: auto;
+  }
+
+
+  .show-desktop{
+    display: none;
+  }
+}
